@@ -1,0 +1,68 @@
+body {
+    margin: auto;
+    font-family: Arial, sans-serif;
+    width: 100%;
+}
+
+/*BARRA SUPERIOR CON LOGO*/
+.topnav{
+    background-color: rgba(231, 82, 82, 0.4); /* color transparente */
+    align-items: center;
+    display: flex;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    backdrop-filter: blur(10px) saturate(140%);
+    -webkit-backdrop-filter: blur(10px) saturate(140%);
+    z-index: 1
+}
+.topnav_divInterior{
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    width: 90%;
+    margin: auto;
+
+}
+
+/*cmabiar tipo y borrar comentario después*/
+.topnav_divInterior a{
+    text-align: right;    
+    gap: 50%;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+
+/*iamgenes dentro de la barra sticky*/
+.logo_img{
+    width: 25%;
+    margin-right: 35%;
+}
+.icon{
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+/*DIV BASE PARA TODOS LOS ESPACIOS*/
+.div{
+     align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+/*Imagen grande general*/
+.div img{
+    width: 100%;
+    gap: 50%;
+
+
+}
+
