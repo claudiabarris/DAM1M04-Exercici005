@@ -56,6 +56,8 @@ body {
     display: flex;
     justify-content: center;
     width: 100%;
+    padding-bottom: 1%;
+    
 }
 
 /*Imagen grande general*/
@@ -66,3 +68,73 @@ body {
 
 }
 
+
+/*CONTENEDOR PARA LAS CARTAS*/
+.div_cartas{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4%;
+    width: 80%;
+    margin: auto;
+}
+.cartas{
+    flex-wrap: wrap;
+    background-color: #ede9f8;
+    border-radius: 8px;
+    justify-content: center;
+    text-align: center;
+    max-width: 300px;
+    cursor: pointer;
+    transition-property: background-color, box-shadow, transform;
+    transition-duration: 0.5s;
+}
+
+.cartas img{
+    width: 100%;
+}
+
+.cartas:hover{
+    transform: scale(1.5);
+    color: rgb(231, 82, 82);
+}
+
+
+
+.carts:hover .img_trans{
+    opacity: 1;
+}
+
+.cartas_line_tra div{
+    position:relative;
+    transform: translateX(-150px) translateY(-150px);
+}
+
+.cartas_line_tra > div {
+   position: relative;
+   width: 300px;
+}
+
+.cartas_line_tra img{
+    position: absolute;
+    top: 0;
+    aspect-ratio: auto;
+    height: 300px;
+    transition: opacity ease 0.3s;
+}
+
+.cartas_line_tra img:first-child {
+    opacity: 1;
+}
+
+.cartas_line_tra img:last-child {
+    opacity: 0;
+}
+
+.cartas:hover img:first-child  {
+    opacity: 0;
+}
+
+.cartas:hover img:last-child  {
+    opacity: 1;
+}
