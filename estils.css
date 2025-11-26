@@ -6,7 +6,7 @@ body {
 
 /*BARRA SUPERIOR CON LOGO*/
 .topnav{
-    background-color: rgba(231, 82, 82, 0.4); /* color transparente */
+    background-color: rgba(231, 82, 82, 0.5); /* color transparente */
     align-items: center;
     display: flex;
     width: 100%;
