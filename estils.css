@@ -115,22 +115,61 @@ body {
 }
 
 /*canvi de foto, amb transició.*/
+
+/*Transition ease-out*/
 .carta_foto1{
-    background-image: url("imatges/botas\ blnacas.webp")
     border-radius: 4%;
     width: 40%;
+    height: 1000px;
+    background-image: url(imatges/1.jpg);
     background-size: cover;
     background-position: center;
-    transition: transform 0.8s ease;
+    transition: transform 0.8s ease, background-image 0.8s ease,opacity 0.8s ease;
     opacity: 1;
-    transition: opacity 0.8s ease;
-    transition: background-image 0.8s ease, 
-    
+    transition-timing-function: ease-out;
+
 
 }
 .carta_foto1:hover{
-    background-image: url("imatges/botas\ blnacas.webp");
+    background-image: url(imatges/botas\ blnacas.webp);
+    transform: scale(1.1);
     opacity: 1;
-    transform: scale(1.2);
-    
 }
+/*transition linear*/
+.carta_foto2{
+    border-radius: 4%;
+    width: 40%;
+    height: 1000px;
+    background-image: url(imatges/2.jpg);
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.8s ease, background-image 0.8s ease,opacity 0.8s ease;
+    opacity: 1;
+    transition-timing-function: linear;
+
+
+}
+.carta_foto2:hover{
+    background-image: url(imatges/botas\ negras.webp);
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+.carta_foto3{
+    border-radius: 4%;
+    width: 40%;
+    height: 1000px;
+    background-image: url(imatges/3.jpg);
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.8s ease, background-image 0.8s ease,opacity 0.8s ease;
+    opacity: 1;
+
+
+}
+.carta_foto3:hover{
+    background-image: url(imatges/botas\ rosas.webp);
+    transform: scale(1.1);
+    opacity: 1;
+}
+
