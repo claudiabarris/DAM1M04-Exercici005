@@ -67,6 +67,7 @@ body {
 .div img{
     width: 100%;
     gap: 50%;
+    
 }
 
 .div h1{
@@ -103,6 +104,7 @@ body {
     background-color: rgb(231, 82, 82, 0.5);
     transition: background-color 0.8s ease;
     transition: width 0.8s ease, height 0.8s ease;
+    cursor: pointer;
 }
 .trajetas p{
     font-family: "Nova Mono", monospace;
@@ -124,9 +126,10 @@ body {
     background-image: url(imatges/1.jpg);
     background-size: cover;
     background-position: center;
-    transition: transform 0.8s ease, background-image 0.8s ease,opacity 0.8s ease;
+    transition: transform 0.8s ease-out, background-image 0.8s ease-out,opacity 0.8s ease-out;
     opacity: 1;
-    transition-timing-function: ease-out;
+    cursor: pointer;
+   
 
 
 }
@@ -143,9 +146,10 @@ body {
     background-image: url(imatges/2.jpg);
     background-size: cover;
     background-position: center;
-    transition: transform 0.8s ease, background-image 0.8s ease,opacity 0.8s ease;
+    transition: transform 0.8s linear, background-image 0.8s linear,opacity 0.8s linear;
     opacity: 1;
-    transition-timing-function: linear;
+    cursor: pointer;
+    
 
 
 }
@@ -155,6 +159,7 @@ body {
     opacity: 1;
 }
 
+/*transition ease-in-out*/
 .carta_foto3{
     border-radius: 4%;
     width: 40%;
@@ -162,8 +167,10 @@ body {
     background-image: url(imatges/3.jpg);
     background-size: cover;
     background-position: center;
-    transition: transform 0.8s ease, background-image 0.8s ease,opacity 0.8s ease;
+    transition: transform 0.8s ease-in-out, background-image 0.8s ease-in-out,opacity 0.8s ease-in-out;
     opacity: 1;
+    cursor: pointer;
+  
 
 
 }
@@ -171,5 +178,33 @@ body {
     background-image: url(imatges/botas\ rosas.webp);
     transform: scale(1.1);
     opacity: 1;
+}
+/*Div inferior*/
+.div_inferior{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: rgb(231, 82, 82, 0.5);
+    margin-bottom: 2%;
+    margin: auto;
+    height: 100px;
+    
+}
+
+.div_inferior a{
+    text-align: center;    
+    margin: auto;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-family: "Nova Mono", monospace;
+    transition: colo 0.5 ease-in-out, letter-spacing 0.5 ease-out;
+    
+}
+.div_inferior a:hover{
+    color: white;
+    letter-spacing: 8px;
 }
 
