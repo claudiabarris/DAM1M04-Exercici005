@@ -116,6 +116,7 @@ body {
 
 /*canvi de foto, amb transició.*/
 .carta_foto1{
+    background-image: url("imatges/botas\ blnacas.webp")
     border-radius: 4%;
     width: 40%;
     background-size: cover;
@@ -128,7 +129,7 @@ body {
 
 }
 .carta_foto1:hover{
-    background-image: url("imatges/1.jpg");
+    background-image: url("imatges/botas\ blnacas.webp");
     opacity: 1;
     transform: scale(1.2);
     
