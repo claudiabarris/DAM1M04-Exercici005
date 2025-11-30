@@ -99,12 +99,16 @@ body {
 
 /*canvio de color i escala*/
 .trajetas{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
     border-radius: 4%;
     width: 40%;
     background-color: rgb(231, 82, 82, 0.5);
     transition: background-color 0.8s ease;
     transition: width 0.8s ease, height 0.8s ease;
     cursor: pointer;
+    flex-direction: column;
 }
 .trajetas p{
     font-family: "Nova Mono", monospace;
@@ -121,8 +125,8 @@ body {
 /*Transition ease-out*/
 .carta_foto1{
     border-radius: 4%;
-    width: 40%;
-    height: 1000px;
+    width: 750px;
+    height: 600px;
     background-image: url(imatges/1.jpg);
     background-size: cover;
     background-position: center;
@@ -141,8 +145,8 @@ body {
 /*transition linear*/
 .carta_foto2{
     border-radius: 4%;
-    width: 40%;
-    height: 1000px;
+    width: 750px;
+    height: 600px;
     background-image: url(imatges/2.jpg);
     background-size: cover;
     background-position: center;
@@ -162,8 +166,8 @@ body {
 /*transition ease-in-out*/
 .carta_foto3{
     border-radius: 4%;
-    width: 40%;
-    height: 1000px;
+    width: 750px;
+    height: 600px;
     background-image: url(imatges/3.jpg);
     background-size: cover;
     background-position: center;
