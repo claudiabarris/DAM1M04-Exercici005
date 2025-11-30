@@ -208,3 +208,86 @@ body {
     letter-spacing: 8px;
 }
 
+
+
+/*PAGINA GALERIA/*
+CARGANDO*/
+
+.loader_corazon_gif {
+    position: relative;
+    width: 100px; /* Tamaño total del área del loader */
+    height: 100px;
+    display: flex; /* Para centrar los spans si fuera necesario */
+    justify-content: center;
+    align-items: center;
+}
+
+.loader_corazon_gif span {
+    position: absolute;
+    font-size: 25px; /* Tamaño del corazón */
+    color: #ff6f88; /* Color de los corazones */
+    opacity: 0; /* Por defecto, los corazones están ocultos */
+    transform-origin: center; /* Punto de pivote para la rotación */
+    animation: fadeHeart 1.2s linear infinite; /* Animación principal de aparición/desaparición */
+}
+
+/* Posicionamiento y retraso para cada corazón */
+/* Calculamos la rotación (360deg / 12 corazones = 30deg por corazón) */
+/* Y el retraso (1.2s / 12 corazones = 0.1s por corazón) */
+
+.loader_corazon_gif span:nth-child(1) {
+    transform: rotate(0deg) translate(40px); /* Distancia del centro */
+    animation-delay: 0s;
+}
+.loader_corazon_gif span:nth-child(2) {
+    transform: rotate(30deg) translate(40px);
+    animation-delay: 0.1s;
+}
+.loader_corazon_gif span:nth-child(3) {
+    transform: rotate(60deg) translate(40px);
+    animation-delay: 0.2s;
+}
+.loader_corazon_gif span:nth-child(4) {
+    transform: rotate(90deg) translate(40px);
+    animation-delay: 0.3s;
+}
+.loader_corazon_gif span:nth-child(5) {
+    transform: rotate(120deg) translate(40px);
+    animation-delay: 0.4s;
+}
+.loader_corazon_gif span:nth-child(6) {
+    transform: rotate(150deg) translate(40px);
+    animation-delay: 0.5s;
+}
+.loader_corazon_gif span:nth-child(7) {
+    transform: rotate(180deg) translate(40px);
+    animation-delay: 0.6s;
+}
+.loader_corazon_gif span:nth-child(8) {
+    transform: rotate(210deg) translate(40px);
+    animation-delay: 0.7s;
+}
+.loader_corazon_gif span:nth-child(9) {
+    transform: rotate(240deg) translate(40px);
+    animation-delay: 0.8s;
+}
+.loader_corazon_gif span:nth-child(10) {
+    transform: rotate(270deg) translate(40px);
+    animation-delay: 0.9s;
+}
+.loader_corazon_gif span:nth-child(11) {
+    transform: rotate(300deg) translate(40px);
+    animation-delay: 1s;
+}
+.loader_corazon_gif span:nth-child(12) {
+    transform: rotate(330deg) translate(40px);
+    animation-delay: 1.1s;
+}
+
+
+@keyframes fadeHeart {
+    0% { opacity: 0; } 
+    10% { opacity: 1; } 
+    80% { opacity: 1; } 
+    100% { opacity: 0; } 
+}
