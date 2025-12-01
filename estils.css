@@ -217,6 +217,18 @@ body {
 
 /*PAGINA GALERIA/*
 CARGANDO*/
+.div_blanco{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+    background-image: url(imatges/WhatsApp\ Image\ 2025-12-01\ at\ 19.08.19.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
 
 .loader_corazon {
     position: relative;
@@ -232,7 +244,7 @@ CARGANDO*/
 .loader_corazon span {
     position: absolute;
     font-size: 50px; 
-    color: #e4405b; 
+    color: #f7f7f7; 
     opacity: 0; 
     transform-origin: center; 
     animation: fadeHeart 1.2s linear infinite; 
@@ -295,20 +307,13 @@ CARGANDO*/
     100% { opacity: 0; } 
 }
 
-.div_blanco{
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    flex-direction: column;
-    background-image: url(imatges/WhatsApp\ Image\ 2025-12-01\ at\ 19.08.19.jpeg);
-    
-}
+
 .div_blanco h1{
     font-family: "Nova Cut", system-ui;
     font-size: 40px;
     font-style: normal;
     margin-bottom: -110px;
+    color: white;
 }
 
 
@@ -319,17 +324,17 @@ CARGANDO*/
     justify-content: space-between;
     width: 100%;
     flex-direction: column;
-    background-color: rgb(231, 82, 82);
+    background-color: rgb(231, 82, 82, 0.5);
     margin-bottom: 2%;
     height: 120px;
-    
-    
+   
 }
 .div_animacion p{
     font-family: "Nova Cut", system-ui;
     font-size: 45px;
     font-style: normal;
     margin-top: -3px;
+    color: w;
 }
 .icon-animat svg {
     margin-top: -35px;
@@ -371,9 +376,6 @@ CARGANDO*/
         fill: #1f1f1f;
     }
 }
-
-
-/*IMAGEN DE ABAJAO*/
 .div_blanco2{
     align-items: center;
     display: flex;
@@ -381,9 +383,13 @@ CARGANDO*/
     width: 100%;
     flex-direction: column;
     background-color: rgba(255, 255, 255, 0.5);  
-    margin: 0%;  
-    padding: 0%;
+    margin: 0; 
+    gap: 0;
+    
 }
+
+/*IMAGEN DE ABAJAO*/
+
 .scroll-reveal-block {
     width: 100%;
     height: 300px; 
@@ -399,7 +405,7 @@ CARGANDO*/
 }
 
 .scroll-reveal-block img {
-    max-width: 100%;
+    width: 100%;
     height: 100%; 
 }
 
@@ -442,23 +448,19 @@ CARGANDO*/
     .scroll-reveal-block::before {
         content: " (Fallback: Browser doesn't fully support scroll-driven animations)";
         position: absolute;
-        top: 10px;
         left: 10px;
-        font-size: 0.8em;
-        color: #c0392b;
-            }
+    }
 }
 
 .pie_separador{
-    height: 250px;
+    height: 500px;
     align-items: center;
     display: flex;
     justify-content: center;
     width: 100%;
     flex-direction: column;
     background-color: rgba(255, 255, 255);  
-    margin: 0%;  
-    padding: 0%;
+    margin: auto;
 }
 
 .pie_separador img{
