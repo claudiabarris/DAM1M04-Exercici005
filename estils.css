@@ -220,9 +220,9 @@ CARGANDO*/
 
 .loader_corazon {
     position: relative;
-    width: 500px; /* Tamaño total del área del loader */
+    width: 500px; 
     height: 500px;
-    display: flex; /* Para centrar los spans si fuera necesario */
+    display: flex; 
     justify-content: center;
     align-items: center;
     display: flex;
@@ -232,14 +232,14 @@ CARGANDO*/
 .loader_corazon span {
     position: absolute;
     font-size: 50px; 
-    color: #ff6f88; 
+    color: #e4405b; 
     opacity: 0; 
     transform-origin: center; 
     animation: fadeHeart 1.2s linear infinite; 
 }
 
 .loader_corazon span:nth-child(1) {
-    transform: rotate(0deg) translate(80px); /* Distancia del centro */
+    transform: rotate(0deg) translate(80px); 
     animation-delay: 1s;
 }
 .loader_corazon span:nth-child(2) {
@@ -301,8 +301,7 @@ CARGANDO*/
     justify-content: center;
     width: 100%;
     flex-direction: column;
-    background-color: rgba(255, 255, 255, 0.5);
-    margin-top: 60px;
+    background-image: url(imatges/WhatsApp\ Image\ 2025-12-01\ at\ 19.08.19.jpeg);
     
 }
 .div_blanco h1{
@@ -311,3 +310,159 @@ CARGANDO*/
     font-style: normal;
     margin-bottom: -110px;
 }
+
+
+/*ANIMACIÓN VARIADA*/
+.div_animacion{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-direction: column;
+    background-color: rgb(231, 82, 82);
+    margin-bottom: 2%;
+    height: 120px;
+    
+    
+}
+.div_animacion p{
+    font-family: "Nova Cut", system-ui;
+    font-size: 45px;
+    font-style: normal;
+    margin-top: -3px;
+}
+.icon-animat svg {
+    margin-top: -35px;
+    animation: bounceAndSpin 1.6s ease-in-out infinite;
+    transform-origin: center;
+    
+}
+
+/* ANIMACIÓ PRINCIPAL */
+@keyframes bounceAndSpin {
+
+    0% {
+        transform: translateY(0) rotate(0deg) scale(1);
+        opacity: 0.6;
+        fill: #1f1f1f;
+    }
+
+    25% {
+        transform: translateY(-20px) rotate(90deg) scale(1.1);
+        opacity: 1;
+        fill: #ff6f88; /* Rosa */
+    }
+
+    50% {
+        transform: translateY(0) rotate(180deg) scale(0.95);
+        opacity: 0.8;
+        fill: #ffb347; /* Taronja */
+    }
+
+    75% {
+        transform: translateY(-10px) rotate(270deg) scale(1.05);
+        opacity: 1;
+        fill: #6ec1e4; /* Blau */
+    }
+
+    100% {
+        transform: translateY(0) rotate(360deg) scale(1);
+        opacity: 0.6;
+        fill: #1f1f1f;
+    }
+}
+
+
+/*IMAGEN DE ABAJAO*/
+.div_blanco2{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.5);  
+    margin: 0%;  
+    padding: 0%;
+}
+.scroll-reveal-block {
+    width: 100%;
+    height: 300px; 
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; 
+    opacity: 0;
+    transform: translateY(100px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out; 
+}
+
+.scroll-reveal-block img {
+    max-width: 100%;
+    height: 100%; 
+}
+
+@keyframes moveUp {
+    to { 
+        opacity: 1; 
+        transform: translateY(0); 
+    }
+}
+
+@supports (animation-timeline: view()) {
+    .scroll-reveal-block {
+               
+    transition: none; 
+    animation: moveUp 1s forwards;
+    animation-timeline: view();
+}
+
+            
+    .reveal-1 {
+        animation-range: entry 20% cover 50%;
+    }
+
+    .reveal-2 {
+                
+        animation-range: entry 0% cover 40%;
+        animation-delay: 0.2s; 
+    }
+
+    .reveal-3 {
+        animation-range: entry 50% cover 80%;
+        animation-delay: 0.4s; 
+    }
+}
+
+        
+
+@supports not (animation-timeline: view()) {
+        
+    .scroll-reveal-block::before {
+        content: " (Fallback: Browser doesn't fully support scroll-driven animations)";
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        font-size: 0.8em;
+        color: #c0392b;
+            }
+}
+
+.pie_separador{
+    height: 250px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255);  
+    margin: 0%;  
+    padding: 0%;
+}
+
+.pie_separador img{
+    width: 80%;
+}
+    
+        
