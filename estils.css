@@ -20,7 +20,7 @@ body {
 
 /*BARRA SUPERIOR CON LOGO*/
 .topnav{
-    background-color: rgba(231, 82, 82, 0.5); /* color transparente */
+    background-color: rgba(231, 82, 82, 0.5); 
     align-items: center;
     display: flex;
     width: 100%;
@@ -39,7 +39,7 @@ body {
 
 }
 
-/*cmabiar tipo y borrar comentario después*/
+
 .topnav_divInterior a{
     text-align: right;    
     gap: 50%;
@@ -49,7 +49,7 @@ body {
     
 }
 
-/*iamgenes dentro de la barra sticky*/
+
 .logo_img{
     width: 18%;
     margin-right: 35%;
@@ -716,7 +716,7 @@ CARGANDO*/
     }
 
     .logo_img {
-        width: 40%;   /* más pequeña en móvil */
+        width: 40%;   
         margin: 0 auto;
     }
 
@@ -742,7 +742,7 @@ CARGANDO*/
     }
 
     .div h1 {
-        font-size: 2rem; /* más pequeño en móvil */
+        font-size: 2rem; 
         margin-top: 0;
     }
 
@@ -1003,7 +1003,7 @@ CARGANDO*/
 @media (max-width: 768px) {
   .div_guia p {
     padding: 0 1rem;
-    text-align: left;   /* o center si lo prefieres, pero con padding */
+    text-align: left;   
   }
 }
 
